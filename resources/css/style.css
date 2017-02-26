@@ -3,10 +3,11 @@
 }
 
 body {
-  background-color: papayawhip;
+  /*background-color: papayawhip;
   cursor: default;
   background-image: url("https://static.pexels.com/photos/5049/forest-trees-fog-foggy.jpg");
-  background-position: center;
+  background-position: center;*/
+  border: 10px dashed red;
 }
 
 /*#shadow {
@@ -18,27 +19,30 @@ body {
   left: 20vw;
 }*/
 
-.appStyle {
-  cursor: default;
-  width: 1000px;
-  height: 600px;
-  max-width: 1000px;
-  max-height: 600px;
-  min-width: 1000px;
-  min-height: 600px;
-  border: 2px solid black;
-  border-top-color: grey;
-  margin: auto;
-  margin-top: 10vh;
-  border-radius: 10px;
-  background: rgb(14,14,14);
-  background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);
-  background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
-  background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );
+/* ================================
+  Styling the containers
+=================================*/
+.appContainer {
+  /*cursor: default;*/
+  /*width: 1000px;*/
+  height: 100vh;
+  /*max-width: 1000px;*/
+  /*max-height: 600px;*/
+  /*min-width: 1000px;*/
+  /*min-height: 600px;*/
+  /*border: 2px solid black;*/
+  /*border-top-color: grey;*/
+  /*margin: auto;*/
+  /*margin-top: 10vh;*/
+  /*border-radius: 10px;*/
+  /*background: rgb(14,14,14);*/
+  /*background: -moz-linear-gradient(left,  rgba(14,14,14,1) 0%, rgba(78,92,90,1) 18%, rgba(130,157,152,1) 33%, rgba(142,166,162,1) 50%, rgba(153,175,171,1) 67%, rgba(174,191,188,1) 78%, rgba(216,224,222,1) 100%);*/
+  /*background: -webkit-linear-gradient(left,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);*/
+  /*background: linear-gradient(to right,  rgba(14,14,14,1) 0%,rgba(78,92,90,1) 18%,rgba(130,157,152,1) 33%,rgba(142,166,162,1) 50%,rgba(153,175,171,1) 67%,rgba(174,191,188,1) 78%,rgba(216,224,222,1) 100%);*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#d8e0de',GradientType=1 );*/
 }
 
-.canvasStyle {
+.canvasContainer {
   width: 98%;
   height: 70%;
   margin: auto;
@@ -51,7 +55,7 @@ body {
   overflow: hidden;
 }
 
-.paletteStyle {
+.paletteContainer {
   width: 98%;
   margin: auto;
   height: 30%;
@@ -90,7 +94,9 @@ body {
 }
 
 
-
+/* ==================================
+  Default colors of the color palette
+===================================*/
 .red {
   background-color: red;
   visibility: visible;
@@ -254,7 +260,7 @@ body {
   outline: 0;
 }
 
-.clickable:active, .canvasStyle:active {
+.clickable:active, .canvasContainer:active {
   cursor: pointer;
 }
 
